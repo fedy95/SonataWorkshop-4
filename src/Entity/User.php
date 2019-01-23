@@ -24,7 +24,7 @@ class User extends BaseUser
 	 * @Assert\Length(
 	 *      max = 255,
 	 * )
-	 * @ORM\Column(type="string", length=255, nullable=false)
+	 * @ORM\Column(type="string", length=255, nullable=true)
 	 */
 	protected $firstName;
 
@@ -33,7 +33,7 @@ class User extends BaseUser
 	 * @Assert\Length(
 	 *      max = 255,
 	 * )
-	 * @ORM\Column(type="string", length=255, nullable=false)
+	 * @ORM\Column(type="string", length=255, nullable=true)
 	 */
 	protected $lastName;
 
