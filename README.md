@@ -14,5 +14,8 @@
   - [Docs site](https://sonata-project.org/bundles/admin/3-x/doc/index.html);
   - [Docs symfony](https://symfony.com/doc/master/bundles/SonataAdminBundle/getting_started/installation.html);
   - [Git](https://github.com/sonata-project/SonataAdminBundle/).
-
-  
+- FOSUserBundle:
+  - [Command line tools](https://symfony.com/doc/2.0/bundles/FOSUserBundle/command_line_tools.html)
+    - bin/console fos:user:create adminuser --super-admin
+    - bin/console fos:user:create testuser
+    
