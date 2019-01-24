@@ -1,0 +1,121 @@
+/*!
+ * Start Bootstrap - One Page Wonder v5.0.0 (https://startbootstrap.com/template-overviews/one-page-wonder)
+ */
+@import "fonts/fonts.css";
+
+header {
+  font-family: SolomonSansBold, serif;
+}
+
+body {
+  font-family: SolomonSansBold, serif;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: #000000;
+  font-family: SolomonSansBold, serif;
+  bottom: 0;
+
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: SolomonSansBoldItalic, serif;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+  background-image: url("../images/1.jpg");
+  background-repeat:no-repeat;
+  background-position: center center;
+  min-height:100%;
+}
+
+header.masthead .bg-circle {
+  z-index: 0;
+  position: absolute;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 6rem;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem;
+  }
+}
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.navbar-custom {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #563ab0;
+}
+
+.navbar-custom .navbar-brand {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+
+.nav-link:hover {
+  font-weight: bolder;
+}
+
+.bg-primary {
+  background-color: #3ab073 !important;
+}
+
+.btn-primary {
+  background-color: #3ab073;
+  border-color: #3ab073;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #0D6D22 !important;
+  border-color: #0D6D22 !important;
+}
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
+}
+
+.btn-secondary {
+  background-color: #367D46;
+  border-color: #367D46;
+}
+
+.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
+  background-color: #cc5500 !important;
+  border-color: #cc5500 !important;
+}
+
+.btn-secondary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+}
+
+.container {
+  position: relative;
+}

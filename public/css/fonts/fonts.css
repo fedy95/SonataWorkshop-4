@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i);
+
+@font-face {
+    font-family: 'RobotoSlabRegular';
+    src: url('RobotoSlabRegular/robotoslabregular.ttf') format('truetype');
+    src: url('RobotoSlabRegular/robotoslabregular.woff2') format('woff2'),
+    url('RobotoSlabRegular/robotoslabregular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SolomonSansBlack';
+    src: url('SolomonSansBlack/Solomon-Sans-Black.otf') format('opentype');
+    src: url('SolomonSansBlack/Solomon-Sans-Black.woff2') format('woff2'),
+    url('SolomonSansBlack/Solomon-Sans-Black.woff') format('woff'),
+    url('SolomonSansBlack/Solomon-Sans-Black.ttf') format('truetype'),
+    url('SolomonSansBlack/Solomon-Sans-Black.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SolomonSansBlackItalic';
+    src: url('SolomonSansBlackItalic/Solomon-Sans-Black-Italic.otf') format('opentype');
+    src: url('SolomonSansBlackItalic/Solomon-Sans-Black-Italic.woff2') format('woff2'),
+    url('SolomonSansBlackItalic/Solomon-Sans-Black-Italic.woff') format('woff'),
+    url('SolomonSansBlackItalic/Solomon-Sans-Black-Italic.ttf') format('truetype'),
+    url('SolomonSansBlackItalic/Solomon-Sans-Black-Italic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SolomonSansBold';
+    src: url('SolomonSansBold/Solomon-Sans-Bold.otf') format('opentype');
+    src: url('SolomonSansBold/Solomon-Sans-Bold.woff2') format('woff2'),
+    url('SolomonSansBold/Solomon-Sans-Bold.woff') format('woff'),
+    url('SolomonSansBold/Solomon-Sans-Bold.ttf') format('truetype'),
+    url('SolomonSansBold/Solomon-Sans-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SolomonSansBoldItalic';
+    src: url('SolomonSansBoldItalic/Solomon-Sans-Bold-Italic.otf') format('opentype');
+    src: url('SolomonSansBoldItalic/Solomon-Sans-Bold-Italic.woff2') format('woff2'),
+    url('SolomonSansBoldItalic/Solomon-Sans-Bold-Italic.woff') format('woff'),
+    url('SolomonSansBoldItalic/Solomon-Sans-Bold-Italic.ttf') format('truetype'),
+    url('SolomonSansBoldItalic/Solomon-Sans-Bold-Italic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SolomonSansBook';
+    src: url('SolomonSansBook/Solomon-Sans-Book.otf') format('opentype');
+    src: url('SolomonSansBook/Solomon-Sans-Book.woff2') format('woff2'),
+    url('SolomonSansBook/Solomon-Sans-Book.woff') format('woff'),
+    url('SolomonSansBook/Solomon-Sans-Book.ttf') format('truetype'),
+    url('SolomonSansBook/Solomon-Sans-Book.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SolomonSansBookItalic';
+    src: url('SolomonSansBookItalic/Solomon-Sans-Book-Italic.otf') format('opentype');
+    src: url('SolomonSansBookItalic/Solomon-Sans-Book-Italic.woff2') format('woff2'),
+    url('SolomonSansBookItalic/Solomon-Sans-Book-Italic.woff') format('woff'),
+    url('SolomonSansBookItalic/Solomon-Sans-Book-Italic.ttf') format('truetype'),
+    url('SolomonSansBookItalic/Solomon-Sans-Book-Italic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SolomonSansLight';
+    src: url('SolomonSansLight/Solomon-Sans-Light.otf') format('opentype');
+    src: url('SolomonSansLight/Solomon-Sans-Light.woff2') format('woff2'),
+    url('SolomonSansLight/Solomon-Sans-Light.woff') format('woff'),
+    url('SolomonSansLight/Solomon-Sans-Light.ttf') format('truetype'),
+    url('SolomonSansLight/Solomon-Sans-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SolomonSansLightItalic';
+    src: url('SolomonSansLightItalic/Solomon-Sans-Light-Italic.otf') format('opentype');
+    src: url('SolomonSansLightItalic/Solomon-Sans-Light-Italic.woff2') format('woff2'),
+    url('SolomonSansLightItalic/Solomon-Sans-Light-Italic.woff') format('woff'),
+    url('SolomonSansLightItalic/Solomon-Sans-Light-Italic.ttf') format('truetype'),
+    url('SolomonSansLightItalic/Solomon-Sans-Light-Italic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SolomonSansNormal';
+    src: url('SolomonSansNormal/Solomon-Sans-Normal.otf') format('opentype');
+    src: url('SolomonSansNormal/Solomon-Sans-Normal.woff2') format('woff2'),
+    url('SolomonSansNormal/Solomon-Sans-Normal.woff') format('woff'),
+    url('SolomonSansNormal/Solomon-Sans-Normal.ttf') format('truetype'),
+    url('SolomonSansNormal/Solomon-Sans-Normal.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SolomonSansNormalItalic';
+    src: url('SolomonSansNormalItalic/Solomon-Sans-Normal-Italic.otf') format('opentype');
+    src: url('SolomonSansNormalItalic/Solomon-Sans-Normal-Italic.woff2') format('woff2'),
+    url('SolomonSansNormalItalic/Solomon-Sans-Normal-Italic.woff') format('woff'),
+    url('SolomonSansNormalItalic/Solomon-Sans-Normal-Italic.ttf') format('truetype'),
+    url('SolomonSansNormalItalic/Solomon-Sans-Normal-Italic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SolomonSansSemiBold';
+    src: url('SolomonSansSemiBold/Solomon-Sans-SemiBold.otf') format('opentype');
+    src: url('SolomonSansSemiBold/Solomon-Sans-SemiBold.woff2') format('woff2'),
+    url('SolomonSansSemiBold/Solomon-Sans-SemiBold.woff') format('woff'),
+    url('SolomonSansSemiBold/Solomon-Sans-SemiBold.ttf') format('truetype'),
+    url('SolomonSansSemiBold/Solomon-Sans-SemiBold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SolomonSansSemiBolditalic';
+    src: url('SolomonSansSemiBolditalic/Solomon-Sans-SemiBold-Italic.otf') format('opentype');
+    src: url('SolomonSansSemiBolditalic/Solomon-Sans-SemiBold-Italic.woff2') format('woff2'),
+    url('SolomonSansSemiBolditalic/Solomon-Sans-SemiBold-Italic.woff') format('woff'),
+    url('SolomonSansSemiBolditalic/Solomon-Sans-SemiBold-Italic.ttf') format('truetype'),
+    url('SolomonSansSemiBolditalic/Solomon-Sans-SemiBold-Italic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SolomonSansThin';
+    src: url('SolomonSansThin/Solomon-Sans-Thin.otf') format('opentype');
+    src: url('SolomonSansThin/Solomon-Sans-Thin.woff2') format('woff2'),
+    url('SolomonSansThin/Solomon-Sans-Thin.woff') format('woff'),
+    url('SolomonSansThin/Solomon-Sans-Thin.ttf') format('truetype'),
+    url('SolomonSansThin/Solomon-Sans-Thin.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SolomonSansThinItalic';
+    src: url('SolomonSansThinItalic/Solomon-Sans-Thin-Italic.otf') format('opentype');
+    src: url('SolomonSansThinItalic/Solomon-Sans-Thin-Italic.woff2') format('woff2'),
+    url('SolomonSansThinItalic/Solomon-Sans-Thin-Italic.woff') format('woff'),
+    url('SolomonSansThinItalic/Solomon-Sans-Thin-Italic.ttf') format('truetype'),
+    url('SolomonSansThinItalic/Solomon-Sans-Thin-Italic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
