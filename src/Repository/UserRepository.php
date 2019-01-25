@@ -1,12 +1,12 @@
 <?php
 
-namespace AppBundle\Repository;
+namespace App\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
 /**
  * Class UserRepository
- * @package AppBundle\Repository
+ * @package App\Repository
  */
 class UserRepository extends EntityRepository
 {
