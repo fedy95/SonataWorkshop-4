@@ -1,0 +1,16 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                {{ form_start(form, { 'action': path('fos_user_resetting_reset', {'token': token}), 'attr': {'class': 'default-form login-form'} }) }}
+                {{ form_row(form.plainPassword) }}
+                <div class="row">
+                    <div class="col-xs-12 text-right">
+                        <input type="submit" class="primary-button blue" value="Сохранить">
+                    </div>
+                </div>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+</section>

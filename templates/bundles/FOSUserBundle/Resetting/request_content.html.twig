@@ -1,0 +1,24 @@
+<div class="container" style="margin-top: 60px; margin-bottom: 80px">
+    <h3 style="text-align: center">Восстановление пароля</h3>
+
+    <div class="row" style="display: flex; align-items: center; justify-content: center">
+        <div class="col-md-6 col-md-offset-3">
+            <form class="login-form default-form" action="{{ path("fos_user_resetting_send_email") }}" method="post">
+                <div class="form-group">
+                    <p>
+                        Для восстановления пароля введите email, который вы использовали ранее для доступа на сайт
+                    </p>
+                    <label class="control-label">Введите email</label>
+                    <input type="text" id="username" name="username" required="required" class="form-control"/>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 text-right">
+                        <input class="btn btn-dark" type="submit" id="_submit" name="_submit"
+                               value="Отправить"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
