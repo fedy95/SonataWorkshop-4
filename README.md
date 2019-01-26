@@ -9,6 +9,7 @@
 - bin/console server:stop
 - bin/console debug:router
 
+- bin/console doctrine:database:create
 - bin/console make:migration
 - bin/console doctrine:migrations:migrate
 
