@@ -1,0 +1,26 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="container" style="margin-top: 60px; margin-bottom: 80px">
+    <div class="row" style="display: flex; align-items: center; justify-content: center">
+        <div class="card">
+            <div class="card-body col-md-12">
+                <h5 class="card-title" style="text-align: center">{{ 'profile.show.personal_data'|trans }}</h5>
+                <hr>
+                <h6 class="card-subtitle mb-2 text-muted">{{ 'profile.show.email'|trans }}: {{ user.email }}</h6>
+                <h6 class="card-title">{{ 'profile.show.username'|trans }}: {{ user.username }}</h6>
+                <hr>
+                <p>{{ 'profile.first_name'|trans }}: {{ user.lastName }}</p>
+                <p>{{ 'profile.last_name'|trans }}: {{ user.middleName }}</p>
+                <p>{{ 'profile.middle_name'|trans }}: {{ user.middleName }}</p>
+                <p>{{ 'profile.date_of_birth'|trans }}: {{ user.dateOfBirth }}</p>
+                <p>{{ 'profile.sex'|trans }}: {{ user.sex }}</p>
+                <p>{{ 'profile.phone'|trans }}: {{ user.phone }}</p>
+                <hr>
+                <div class="text-right">
+                    <a href="{{ path('fos_user_profile_edit') }}"
+                       class="card-link">{{ 'profile.show.edit_personal_data'|trans }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

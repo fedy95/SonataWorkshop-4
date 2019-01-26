@@ -18,9 +18,17 @@ security:
         submit: 'Log in'
 
 profile:
+    username: Username
+    email: Email
+    first_name: First name
+    last_name: Last name
+    middle_name: Middle name
+    date_of_birth: Date of birth
+    sex: Sex
+    phone: Phone
+    personal_data: 'Personal data'
     show:
-        username: Username
-        email: Email
+        edit_personal_data: 'Edit'
     edit:
         submit: Update
     flash:
@@ -90,3 +98,4 @@ form:
     password_confirmation: 'Repeat password'
     new_password: 'New password'
     new_password_confirmation: 'Repeat new password'
+

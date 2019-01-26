@@ -11,9 +11,14 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="/">О проекте</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="{{ path('show.comment') }}">
+                            Отзывы
+                        </a>
+                    </li>
                     {% if app.user %}
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="{{ path('fos_user_security_logout') }}">
+                            <a class="nav-link js-scroll-trigger" href="{{ path('fos_user_profile_show') }}">
                                 Личный кабинет
                             </a>
                         </li>
@@ -29,19 +34,6 @@
                             </a>
                         </li>
                     {% endif %}
-                    {#<li class="nav-item">#}
-                        {#<a class="nav-link js-scroll-trigger" href="#services">Вопрос-Ответ</a>#}
-                    {#</li>#}
-                    {#<li class="nav-item">#}
-                        {#<a class="nav-link js-scroll-trigger" href="{{ path('news.show') }}">Новости проекта</a>#}
-                    {#</li>#}
-                    {#<li class="nav-item">#}
-                        {#<a class="nav-link js-scroll-trigger" href="{{ path('document.show') }}">Нормативные#}
-                            {#документы</a>#}
-                    {#</li>#}
-                    {#<li class="nav-item">#}
-                        {#<a class="nav-link js-scroll-trigger" href="#">Онлайн-камеры</a>#}
-                    {#</li>#}
                 </ul>
             </div>
         </div>

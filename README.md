@@ -9,6 +9,9 @@
 - bin/console server:stop
 - bin/console debug:router
 
+- bin/console make:migration
+- bin/console doctrine:migrations:migrate
+
 ## Links
 - SonataAdminBundle:
   - [Docs site](https://sonata-project.org/bundles/admin/3-x/doc/index.html);
@@ -19,3 +22,6 @@
     - bin/console fos:user:create adminuser --super-admin admin admin
     - bin/console fos:user:create testuser user user
     
+### TODO
+- [ckeditor](https://sonata-project.org/bundles/formatter/master/doc/reference/installation.html);
+- multi file uploader.

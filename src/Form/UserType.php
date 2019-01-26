@@ -8,7 +8,6 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class UserType extends AbstractType
 {
@@ -16,6 +15,7 @@ class UserType extends AbstractType
 	{
 		$builder
 			->add('first_name', TextType::class, [
+				'label' => 'Имя',
 				'required' => true
 			])
 			->add('last_name', TextType::class, [
@@ -44,27 +44,27 @@ class UserType extends AbstractType
 			])
 			->add('submit', SubmitType::class, [
 				'attr' => [
-					'class' => 'submit-button button button-red',
+					'class' => 'btn btn-dark',
 				],
-				'label' => 'Send',
+				'label' => 'Обновить',
 			]);
 	}
 
-	/**
-	 * {@inheritdoc}
-	 */
-	public function configureOptions(OptionsResolver $resolver)
+	public function getParent()
+
 	{
-		$resolver->setDefaults([
-			'data_class' => 'App\Entity\User'
-		]);
+		return 'FOS\UserBundle\Form\Type\ProfileFormType';
 	}
 
-	/**
-	 * {@inheritdoc}
-	 */
 	public function getBlockPrefix()
+
 	{
-		return 'appbundle_participant';
+		return 'app_user_edit';
+	}
+
+	public function getName()
+
+	{
+		return $this->getBlockPrefix();
 	}
 }

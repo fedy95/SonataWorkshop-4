@@ -1,17 +1,15 @@
-{% extends '/Front/base.html.twig' %}
+{% extends 'base.html.twig' %}
 
 {% set header_title = 'Восстановление пароля' %}
 
-{% block content %}
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <div class="default-form login-form text-center">
-                        Данные для восстановления пароля отправлены на указанный адрес
-                    </div>
+{% block main %}
+    <div class="container" style="margin-top: 60px; margin-bottom: 80px">
+        <div class="row" style="display: flex; align-items: center; justify-content: center">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="default-form login-form text-center">
+                    Данные для восстановления пароля отправлены на указанный адрес
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 {% endblock %}

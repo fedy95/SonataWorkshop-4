@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -68,9 +70,15 @@ class User extends BaseUser
 	 */
 	protected $phone;
 
+	/**
+	 * @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="user")
+	 */
+	private $comment;
+
 	public function __construct()
 	{
 		parent::__construct();
+		$this->comment = new ArrayCollection();
 	}
 
 	/**
@@ -196,6 +204,37 @@ class User extends BaseUser
 	public function setPhone(string $phone) : User
 	{
 		$this->phone = $phone;
+		return $this;
+	}
+
+	/**
+	 * @return Collection|Comment[]
+	 */
+	public function getComment() : Collection
+	{
+		return $this->comment;
+	}
+
+	public function addComment(Comment $comment) : self
+	{
+		if (!$this->comment->contains($comment)) {
+			$this->comment[] = $comment;
+			$comment->setUser($this);
+		}
+
+		return $this;
+	}
+
+	public function removeComment(Comment $comment) : self
+	{
+		if ($this->comment->contains($comment)) {
+			$this->comment->removeElement($comment);
+			// set the owning side to null (unless already changed)
+			if ($comment->getUser() === $this) {
+				$comment->setUser(null);
+			}
+		}
+
 		return $this;
 	}
 }

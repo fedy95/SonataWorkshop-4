@@ -1,0 +1,46 @@
+{% extends "base.html.twig" %}
+
+{% block main %}
+
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
+            <div class="smooth-scroll">
+                <h1 class="masthead-heading mb-0">Турбаза Владивосток</h1>
+                <h2 class="masthead-subheading mb-0">Изменит ваше воображение</h2>
+                <a href="#1" class="btn btn-primary btn-xl mt-5">Узнать больше</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" id="1" style="margin-top: 80px; margin-bottom: 80px">
+        {% for aboutInfoRow in aboutInfoRows %}
+            {% if (aboutInfoRow.pos != '99') %}
+                <div class="grid">
+                    <div class="row">
+                        <div class="col-lg-5" style="position: relative">
+                            <h2>{{ aboutInfoRow.title }}</h2>
+                        </div>
+                        <div class="col-lg-7" style="position: relative">
+                            {{ aboutInfoRow.text|raw }}
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            {% else %}
+                <br>
+                <div class="grid">
+                    <div class="row">
+                        <div class="col-lg-12" style="position: relative; text-align: center">
+                            <h2>{{ aboutInfoRow.title }}</h2>
+                            <br>
+                            <div style="margin:auto; float: none; display: table;">
+                                {{ aboutInfoRow.text|raw }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+{% endblock %}
