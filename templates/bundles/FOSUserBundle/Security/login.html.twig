@@ -3,5 +3,5 @@
 {% set header_title = 'Вход в личный кабинет' %}
 
 {% block main %}
-    {{ include('@FOSUser/Security/login_content.html.twig') }}
+    {% include('@FOSUser/Security/login_content.html.twig') %}
 {% endblock %}

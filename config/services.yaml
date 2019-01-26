@@ -11,12 +11,15 @@ services:
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+        public: false       # Allows optimizing the container by removing unused services; this also means
+                            # fetching services directly from the container via $container->get() won't work.
+                            # The best practice is to be explicit about your dependencies anyway.
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
     App\:
         resource: '../src/*'
-        exclude: '../src/{DependencyInjection,Entity,Migrations,Repository,Tests,Kernel.php}'
+        exclude: '../src/{DependencyInjection,Entity,Form,Migrations,Repository,Services,Tests,Kernel.php}'
 
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
@@ -24,5 +27,83 @@ services:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
-    # add more service definitions when explicit configuration is needed
-    # please note that last definitions always *replace* previous ones
+    ### REPOSITORIES
+    App\Repository\AboutInfoRepository:
+        class: 'App\Repository\AboutInfoRepository'
+        autowire: true
+        public: true
+        tags: ['doctrine.repository_service']
+
+    App\Repository\CommentRepository:
+        class: 'App\Repository\CommentRepository'
+        autowire: true
+        public: true
+        tags: ['doctrine.repository_service']
+
+    App\Repository\DepartmentRepository:
+        class: 'App\Repository\DepartmentRepository'
+        autowire: true
+        public: true
+        tags: ['doctrine.repository_service']
+
+    App\Repository\DocumentRepository:
+        class: 'App\Repository\DocumentRepository'
+        autowire: true
+        public: true
+        tags: ['doctrine.repository_service']
+
+
+    App\Repository\HouseRepository:
+        class: 'App\Repository\HouseRepository'
+        autowire: true
+        public: true
+        tags: ['doctrine.repository_service']
+
+    App\Repository\UserRepository:
+        class: 'App\Repository\UserRepository'
+        autowire: true
+        public: true
+        tags: ['doctrine.repository_service']
+
+    ### ADMINS
+    admin.about_info:
+        class: App\Admin\AboutInfoAdmin
+        arguments: [~, App\Entity\AboutInfo,  ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Главная, group: Страницы }
+        public: true
+
+    admin.department:
+        class: App\Admin\DepartmentAdmin
+        arguments: [~, App\Entity\Department, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Отделы, group: Рабочий процесс }
+        public: true
+
+    admin.document:
+        class: App\Admin\DocumentAdmin
+        arguments: [~, App\Entity\Document, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Документы, group: Рабочий процесс }
+        public: true
+
+    admin.user:
+        class: App\Admin\UserAdmin
+        arguments: [~, App\Entity\User, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Пользователи, group: Администрирование }
+        public: true
+
+    admin.house:
+        class: App\Admin\HouseAdmin
+        arguments: [~, App\Entity\House, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Здания, group: Рабочий процесс }
+        public: true
+
+    admin.comment:
+        class: App\Admin\CommentAdmin
+        arguments: [~, App\Entity\Comment, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Комментарии , group: Администрирование }
+        public: true
