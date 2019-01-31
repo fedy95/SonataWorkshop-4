@@ -24,4 +24,5 @@
     
 ### TODO
 - [ckeditor](https://sonata-project.org/bundles/formatter/master/doc/reference/installation.html);
-- multi file uploader.
+- multi file uploader;
+- [sonata translations](https://symfony.com/doc/3.x/bundles/SonataAdminBundle/reference/translation.html).
