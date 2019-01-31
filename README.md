@@ -8,7 +8,6 @@
 - bin/console server:start 127.0.0.1:8001
 - bin/console server:stop
 - bin/console debug:router
-
 - bin/console doctrine:database:create
 - bin/console make:migration
 - bin/console doctrine:migrations:migrate
