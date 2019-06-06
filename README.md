@@ -19,6 +19,7 @@
   - [Git](https://github.com/sonata-project/SonataAdminBundle/).
 - FOSUserBundle:
   - [Command line tools](https://symfony.com/doc/2.0/bundles/FOSUserBundle/command_line_tools.html)
+    - bin/console fos:user:create adminuser --super-admin admin@admin.com admin
     - bin/console fos:user:create adminuser --super-admin admin admin
     - bin/console fos:user:create testuser user user
     
